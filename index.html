@@ -1,0 +1,35 @@
+# sti-chat-a.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI Chat A.I</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function processInput() {
+    const userInput = document.getElementById('userInput').value;
+    const output = document.getElementById('output');
+
+    if (userInput.toLowerCase().includes('computing')) {
+        output.textContent = "Computing is any activity that utilizies computers to manage, process, and communicate critical information that is an integral part of modern industiral technology.";
+    } else if (userInput.toLowerCase().includes('civilizations')) {
+        output.textContent = "The naive view of calculation must be overcome to utilize the power of computing. Therefore, the contributions of early civilizations to computing are considered the foundation of computing today.";
+    } else {
+        output.textContent = "I'm not sure how to respond to that.";
+    }  if (userInput.toLowerCase().includes('artificial intelligence')) {
+        output.textContent = "Machine can learn from experience, adjust to new inputs, and do human-like activities because of this technology. In combination with cloud computing and big data, AI is driving a digital transformation shift in the ICT industry for higher intelligence. ";
+    } else if (userInput.toUpperCase().includes('AI')) {
+        output.textContent = "Machine can learn from experience, adjust to new inputs, and do human-like activities because of this technology. In combination with cloud computing and big data, AI is driving a digital transformation shift in the ICT industry for higher intelligence.";
+    }
+}
+    </script>
+
+</head>
+<body>
+    <h1>STI Chat A.I</h1>
+    <p>Type a message:</p>
+    <input type="text" id="userInput">
+    <button onclick="processInput()">Submit</button>
+    <div id="output"></div>
+</body>
+</html>
